@@ -129,7 +129,7 @@ int classify_digit(vector<vector<uchar>> image_for_classify){
 }
 
 
-Image2d resize_sfImage_to_28x28(sf::Image image){
+myImage resize_sfImage_to_28x28(sf::Image image){
 
     // -------------- get image size -------------- 
     sf::Vector2u image_ori_size = image.getSize();
@@ -181,7 +181,7 @@ Image2d resize_sfImage_to_28x28(sf::Image image){
     // -------------- resize the image -------------- 
     const int BOARD_LENGTH=2; // keep some blank at borders
     
-    Image2d image_for_classify(image_length,
+    myImage image_for_classify(image_length,
         vector<uchar>(image_length, 255)
     ); // create the new small image
 

@@ -13,9 +13,9 @@
 
 using namespace std;
 typedef unsigned char uchar;
-typedef vector<vector<uchar>> Image2d;
+typedef vector<vector<uchar>> myImage;
 
-Image2d resize_sfImage_to_28x28(sf::Image image);
+myImage resize_sfImage_to_28x28(sf::Image image);
 int classify_digit(vector<vector<uchar>> image_for_classify);
 
 uchar getPixel_uint8(sf::Image image, int x, int y); // This is incredibly slow.

@@ -65,7 +65,7 @@ int main()
                         cout << "Press button: CLASSIFY" << endl;
                         sf::Image screenshot = captureWindow(window);
                         // screenshot.saveToFile("./test/test_image.png");
-                        Image2d image_for_classify = resize_sfImage_to_28x28(screenshot);
+                        myImage image_for_classify = resize_sfImage_to_28x28(screenshot);
                         int digit_value = classify_digit(image_for_classify);
                         buttons[0].setButtonString(to_string(digit_value));
                     }

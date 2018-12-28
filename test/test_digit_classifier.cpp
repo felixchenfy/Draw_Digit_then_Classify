@@ -9,11 +9,11 @@
 
 using namespace std;
 typedef unsigned char uchar;
-typedef vector<vector<uchar>> Image2d;
+typedef vector<vector<uchar>> myImage;
 
 // testing by using the image generated from Python (by passing an empty vector)
 void test_using_image_from_python(){
-    Image2d image;
+    myImage image;
     int res_digit_value = classify_digit(image);
     cout << endl << "Recognition result: " << res_digit_value << endl;
     return;
@@ -30,7 +30,7 @@ void test_using_image_from_file(){
     }
 
     // resize the image
-    Image2d image_for_classify = resize_sfImage_to_28x28(image);
+    myImage image_for_classify = resize_sfImage_to_28x28(image);
 
     // recognize the digit in image
     int res_digit_value = classify_digit(image_for_classify);
