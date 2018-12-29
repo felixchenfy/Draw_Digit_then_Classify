@@ -5,7 +5,8 @@ You probably don't want/need to read this file.
 ### 1.h and 2.h include each other sometimes cause wrong
 
 I have 1.h and 2.h, if 2.h includes 1.h, and 1.h includes 2.h as well,  
-then, their might be an error.
+then, their might be an error.  
+Use *forward declare* might solve the problem.
 
 ### global variables need to be defined for each executable
 

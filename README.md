@@ -32,7 +32,7 @@ See an exampe below, the recognition result is shown on the right up corner:
 ![](test/test_image.png)
 
 The cropped and resized image (28x28) used for classification is shown below:  
-![](myNotes/test_image_resized.png)
+![](doc/test_image_resized.png)
 
 ## 1.2 How to compile  
 > $ mkdir bin; mkdir build; cd build; cmake ..; make; cd ..
@@ -83,17 +83,17 @@ Momentum is added but set to 0, because PCA has already made the data pretty cir
 
 I've drawn an image to illustrate the workflow:
 
-![](myNotes/workflow.jpg)
+![](doc/workflow.jpg)
 
 # 4. Training results
 
 You can see the detials in **src/k-means.ipynb**.  
 
 The classification accuracy on the training set (60000) and testing test (10000) of MNIST are:   
-![](myNotes/res_accuracy.png)
+![](doc/res_accuracy.png)
 
 Some examples of classification results are shown below:  
-![](myNotes/res_classification_examples.png)
+![](doc/res_classification_examples.png)
 
 
 # 5. Reference
@@ -104,4 +104,4 @@ from somewhere in [here](http://web.eecs.umich.edu/~honglak/) and is based on th
 
 # 6. Appendix: Formula of ZCA
 I also written down the formula of ZCA (or say PCA sphereing?) as below:  
-![](myNotes/zca.jpg)
+![](doc/zca.jpg)
