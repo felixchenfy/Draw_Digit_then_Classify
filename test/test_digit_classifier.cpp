@@ -5,7 +5,7 @@
 #include <math.h>
 
 #include <SFML/Graphics.hpp>
-#include "../src/digit_classifier.h"
+#include "digit_classifier.h"
 
 using namespace std;
 typedef unsigned char uchar;

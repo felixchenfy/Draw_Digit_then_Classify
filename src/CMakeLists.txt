@@ -13,6 +13,6 @@ add_library( mylib_classifier SHARED
 target_link_libraries( GUI_main
     mylib_GUI
     mylib_classifier
-    ${THIRD_PARTY_LIBRARIES}
+    ${THIRD_PARTY_LIBS}
 )
 

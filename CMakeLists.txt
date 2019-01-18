@@ -6,11 +6,13 @@ set( CMAKE_CXX_FLAGS "-std=c++11 -O3" )
 
 project(digit_classifier)
 
+include_directories( ${PROJECT_SOURCE_DIR}/include )
 set( EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin )
 set( LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib )
 
+
 find_package(SFML 2.5 COMPONENTS graphics audio window system REQUIRED)
-set(THIRD_PARTY_LIBRARIES
+set( THIRD_PARTY_LIBS 
     sfml-graphics
     sfml-audio 
     sfml-window 
